@@ -1,0 +1,1046 @@
+<skin>
+
+<color ci="DragDropInsertionLine" color="#fcfcfc" />
+
+<bitmap file="close_button.png">
+  <subBitmap width="12" ci="IconClose" />
+  <subBitmap width="12" ci="IconClose" sel="mouseover" />
+  <subBitmap width="12" ci="IconClose" sel="mousedown" />
+</bitmap>
+
+<bitmap file="Sourcelist/eject.png">
+  <subBitmap width="18" ci="EjectButton" />
+  <subBitmap width="18" ci="EjectButton" sel="selected,focused" />
+  <subBitmap width="18" ci="EjectButton" sel="mouseover" />
+</bitmap>
+
+<!-- Message icon -->
+<bitmap file="mainlist-annotation-icon.png">
+	<subBitmap width="14" ci="MainlistMessageIcon" sel="unread"/>
+	<subBitmap width="14" ci="MainlistMessageIcon" sel="unread,mouseover"/>
+	<subBitmap width="14" ci="MainlistMessageIcon" sel="read"/>
+	<subBitmap width="14" ci="MainlistMessageIcon" sel="read,mouseover"/>
+	<subBitmap width="14" ci="MainlistMessageIcon" sel="selected"/>
+	<subBitmap width="14" ci="MainlistMessageIcon" sel="selected,mouseover"/>
+</bitmap>
+
+<bitmap file="mainlist-column-header-sort_indicators.png">
+	<subBitmap width="9" ci="MainlistHeaderArrowDown" />
+	<subBitmap width="9" ci="MainlistHeaderArrowUp" />
+</bitmap>
+
+<font ci="MainlistDiscIndicatorNumberFont" size="12" color="#eff0f1" />
+<font ci="MainlistDiscIndicatorTitleFont" size="12" color="#eff0f1" shadow="#404040" />
+
+<bitmap file="mainlist-seen_indicator.png" >
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="header" />
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="!header,seen,!mouseover,!selected" />
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="!header,seen,mouseover,!selected" />
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="!header,seen,!mouseover,selected" />
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="!header,seen,mouseover,selected" />
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="!header,!seen,!mouseover,!selected" />
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="!header,!seen,mouseover,!selected" />
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="!header,!seen,!mouseover,selected" />
+	<subBitmap width="10" ci="MainlistUnseenIcon" sel="!header,!seen,mouseover,selected" />
+-</bitmap>
+
+<bitmap file="mainlist-share.png">
+	<subBitmap width="20" ci="MainlistShareIcon" />
+	<subBitmap width="20" ci="MainlistShareIcon" sel="mouseover,!mousedown" />
+	<subBitmap width="20" ci="MainlistShareIcon" sel="mousedown" />
+	<subBitmap width="20" ci="MainlistShareIcon" sel="selected,focused" />
+	<subBitmap width="20" ci="MainlistShareIcon" sel="selected,focused,mouseover,!mousedown" />
+	<subBitmap width="20" ci="MainlistShareIcon" sel="selected,focused,mousedown" />
+</bitmap>
+
+<bitmap file="mainlist-explicit.png">
+  <subBitmap height="11" ci="MainlistExplicit"/>
+  <subBitmap height="11" ci="MainlistExplicit" sel="playing"/>
+</bitmap>
+
+<!-- Just a star -->
+<bitmap file="star-simple.png">
+  <subBitmap width="16" ci="AddToLibraryStar" sel="starred" />
+  <subBitmap width="16" ci="AddToLibraryStar" sel="starred,mouseover" />
+  <subBitmap width="16" ci="AddToLibraryStar" sel="starred,mousedown" />
+  <subBitmap width="16" ci="AddToLibraryStar" sel="default,!selected" />
+  <subBitmap width="16" ci="AddToLibraryStar" sel="default,!selected,mouseover" />
+  <subBitmap width="16" ci="AddToLibraryStar" sel="default,!selected,mousedown" />
+  <subBitmap width="16" ci="AddToLibraryStar" sel="default,selected" />
+  <subBitmap width="16" ci="AddToLibraryStar" sel="default,selected,mouseover" />
+  <subBitmap width="16" ci="AddToLibraryStar" sel="default,selected,mousedown" />
+</bitmap>
+
+<!-- Just a + -->
+<bitmap file="collection-simple.png">
+  <subBitmap width="21" ci="AddToLibraryCollection"/>
+  <subBitmap width="21" ci="AddToLibraryCollection" sel="mouseover" />
+  <subBitmap width="21" ci="AddToLibraryCollection" sel="mousedown" />
+  <subBitmap width="21" ci="AddToLibraryCollection" sel="incollection" />
+  <subBitmap width="21" ci="AddToLibraryCollection" sel="incollection,mouseover"/>
+  <subBitmap width="21" ci="AddToLibraryCollection" sel="incollection,mousedown"/>
+</bitmap>
+
+<!-- Button for white background -->
+<bitmap file="buttons-for_white_background.png">
+  <subBitmap height="29" edge="15,0,15,0" ci="ButtonWhiteBg" sel="default" />
+  <subBitmap height="29" edge="15,0,15,0" ci="ButtonWhiteBg" sel="default,mousedown" />
+  <subBitmap height="29" edge="15,0,15,0" ci="ButtonWhiteBg" sel="!default"/>
+  <subBitmap height="29" edge="15,0,15,0" ci="ButtonWhiteBg" sel="!default,mousedown"/>
+</bitmap>
+
+<font ci="SidebarBadge" color="#bdc3c7" face="oxygen" style="light" size="12" />
+
+<bitmap file="Sourcelist/badge-square.png" ci="SidebarBadgeBackground" edge="4,0,4,0" />
+
+<!-- Default background color -->
+<color ci="DefaultBg" color="#232629" />
+
+<!-- Mainlist header background colors -->
+<color ci="MainlistHeaderBg" color="#232629" />
+
+<!-- Mainlist header font colors -->
+<font ci="MainlistColumnHeader"                                  color="#7f8c8d" size="12" face="oxygen" />
+<font ci="MainlistColumnHeader" sel="mouseover|mousedown"        color="#bdc3c7" />
+<font ci="MainlistColumnHeader" sel="down,!mouseover,!mousedown" color="#bdc3c7" />
+
+<!-- Mainlist background colors -->
+<color ci="MainlistRow"                           color="#232629" />
+<color ci="MainlistRow" sel="selected,focused"    color="#232629" />
+<color ci="MainlistRow" sel="!selected,mouseover" color="#1c1c1f" />
+
+<!-- Mainlist font colors -->
+<font ci="MainlistRow" color="#bdc3c7" id="mainlistRow" size="12" face="oxygen" />
+<font ci="MainlistRow" color="#2c3e50" sel="!playing,error|!playing,notavail|!playing,unmatched" />
+<font ci="MainlistRow" color="#2980b9" sel="!playing,premiumonly" />
+<font ci="MainlistRow" color="#3daee9" sel="playing" />
+<font ci="MainlistRow" sel="@manuallyqueued" color="#eff0f1" />
+<font ci="MainlistRow" sel="@link"           style="underline" colorEffect="scale:1.3" />
+
+<!-- Mainlist title font colors -->
+<font ci="MainlistColTitle" parent="mainlistRow" />
+<font ci="MainlistColTitle" color="#2c3e50" sel="!playing,error|!playing,notavail|!playing,unmatched" />
+<font ci="MainlistColTitle" color="#2980b9" sel="!playing,premiumonly" />
+<font ci="MainlistColTitle" color="#3daee9" sel="playing" />
+<font ci="MainlistColTitle" color="#eff0f1" sel="@manuallyqueued" />
+
+<!-- Mainlist number, time, added font colors -->
+<font ci="MainlistColNumber" color="#7f8c8d" parent="mainlistRow" />
+<font ci="MainlistColNumber" color="#2c3e50" sel="!playing,error|!playing,notavail|!playing,unmatched" />
+<font ci="MainlistColNumber" color="#2980b9" sel="!playing,premiumonly" />
+<font ci="MainlistColNumber" color="#3daee9" sel="playing" />
+<font ci="MainlistColNumber" color="#eff0f1" sel="@manuallyqueued" />
+
+<font ci="MainlistColTime" color="#7f8c8d" parent="mainlistRow" />
+<font ci="MainlistColTime" color="#2c3e50" sel="!playing,error|!playing,notavail|!playing,unmatched" />
+<font ci="MainlistColTime" color="#2980b9" sel="!playing,premiumonly" />
+<font ci="MainlistColTime" color="#3daee9" sel="playing" />
+<font ci="MainlistColTime" color="#eff0f1" sel="@manuallyqueued" />
+
+<font ci="MainlistColAdded" color="#7f8c8d" parent="mainlistRow" />
+<font ci="MainlistColAdded" color="#2c3e50" sel="!playing,error|!playing,notavail|!playing,unmatched" />
+<font ci="MainlistColAdded" color="#2980b9" sel="!playing,premiumonly" />
+<font ci="MainlistColAdded" color="#3daee9" sel="playing" />
+<font ci="MainlistColAdded" color="#eff0f1" sel="@manuallyqueued" />
+
+<color ci="MainlistRowVerticalLine" />
+<color ci="MainlistRowHorizLine" color="#232629" />
+
+<color ci="MainlistHeaderHorizLine" color="#232629" />
+<color ci="MainlistHeaderVerticalLine" color="#232629" />
+
+<bitmap file="mainlist-row-playing-marker.png">
+  <subBitmap ci="MainlistNowPlayingIcon" width="17" />
+  <subBitmap ci="MainlistNowPlayingIcon" width="8" sel="paused" />
+</bitmap>
+
+<!-- Playqueue -->
+<bitmap ci="MainlistQueueNowPlayingStar" file="special_row-icon.png" />
+
+<bitmap file="popularity_indicator.png">
+	<subBitmap height="8" ci="MainlistPopularityGray" flags="P0" />
+	<subBitmap height="8" ci="MainlistPopularity" flags="P0" />
+	<subBitmap height="8" ci="MainlistPopularityGray" sel="premiumonly" flags="P0" />
+	<subBitmap height="8" ci="MainlistPopularity" sel="premiumonly" flags="P0" />
+</bitmap>
+
+<!-- Progress control -->
+<bitmap file="main-control-progress-bar-slider-bg.png">
+	<subBitmap ci="ProgressBar" sel="left,future" pos="0,0,5,10" edge="4,0,0,0" />
+	<subBitmap ci="ProgressBar" sel="right,future" pos="4,0,5,10" edge="0,0,4,0" />
+
+	<subBitmap ci="ProgressBar" sel="left,history" pos="9,0,5,10" edge="4,0,0,0" />
+	<subBitmap ci="ProgressBar" sel="right,history" pos="13,0,5,10" edge="0,0,4,0" />
+
+	<subBitmap ci="ProgressBar" sel="left,inactive" pos="18,0,5,10" edge="4,0,0,0" />
+	<subBitmap ci="ProgressBar" sel="right,inactive" pos="22,0,5,10" edge="0,0,4,0" />
+</bitmap>
+
+<bitmap file="main-control-slider-knob.png">
+	<subBitmap ci="ProgressBar" sel="knob,!mousedown" width="19" offset="-3,-3" />
+	<subBitmap ci="ProgressBar" sel="knob,mousedown" width="19" offset="-3,-3" />
+	<subBitmap ci="ProgressBar" sel="knob,disabled" width="19" offset="-3,-3" />
+</bitmap>
+
+<!-- Slider control -->
+<bitmap file="main-control-slider-bg.png">
+	<subBitmap ci="Slider" sel="left,future" pos="0,0,5,10" edge="4,0,0,0" />
+	<subBitmap ci="Slider" sel="right,future" pos="4,0,5,10" edge="0,0,4,0" />
+
+	<subBitmap ci="Slider" sel="left,history" pos="9,0,5,10" edge="4,0,0,0" />
+	<subBitmap ci="Slider" sel="right,history" pos="13,0,5,10" edge="0,0,4,0" />
+
+	<subBitmap ci="Slider" sel="left,inactive" pos="18,0,5,10" edge="4,0,0,0" />
+	<subBitmap ci="Slider" sel="right,inactive" pos="22,0,5,10" edge="0,0,4,0" />
+</bitmap>
+
+<bitmap file="main-control-slider-knob.png">
+	<subBitmap ci="Slider" sel="knob,!mousedown" width="19" offset="-3,-3" />
+	<subBitmap ci="Slider" sel="knob,mousedown" width="19" offset="-3,-3" />
+	<subBitmap ci="Slider" sel="knob,disabled" width="19" offset="-3,-3" />
+</bitmap>
+
+<bitmap ci="LoginProgressBar" file="progress-indeterminate.png" sel="indeterminate" />
+<bitmap ci="LoginProgressBar" file="progress-complete.png"      sel="complete" />
+<bitmap ci="LoginProgressBar" file="progress-background.png"    sel="background" edge="4,0,4,0" />
+<bitmap ci="LoginProgressBar" file="progress-background-overlay.png" sel="backgroundoverlay" edge="4,0,4,0" />
+<bitmap ci="LoginProgressBar" file="progress-borders.png"       sel="borders" edge="4,0,4,0" />
+
+<bitmap ci="LoginInstallerBackground" file="login-installer-background.png" />
+
+<bitmap ci="LoginNowPlayingPlaceholder" file="login-np-placeholder.jpg" />
+<font ci="LoginNowPlayingArtist" size="11" color="#787776" shadow="#eff0f1" style="shadow_down"      face="oxygen" />
+<font ci="LoginNowPlayingTitle"  size="13" color="#484847" shadow="#eff0f1" style="bold,shadow_down" face="oxygen" />
+<font ci="LoginLimitedText"      size="11" color="#403f3f" shadow="#eff0f1" style="bold,shadow_down" face="oxygen" />
+
+<!-- Advert progress indicator -->
+<color ci="ProgressBarPieForeground" color="#eff0f1" />
+<color ci="ProgressBarPieBackground" color="#232629" />
+
+<font ci="ProgressBarText" size="11" color="#eff0f1" face="oxygen" />
+
+<!-- Sync progress -->
+<bitmap file="meeter.png">
+  <subBitmap ci="SyncProgress" sel="bg" width="11" edge="5,0,5,0" />
+  <subBitmap ci="SyncProgress" sel="filled" width="11" edge="5,0,5,0" />
+</bitmap>
+
+<!-- Cap indicator -->
+<bitmap file="meeter.png">
+  <subBitmap ci="CIndicator" sel="bg" width="11" edge="5,0,5,0" />
+  <subBitmap ci="CIndicator" sel="filled" width="11" edge="5,0,5,0" />
+  <subBitmap ci="CIndicator" sel="critical" width="11" edge="5,0,5,0" />
+</bitmap>
+
+<!-- Volume control -->
+<bitmap file="main-control-slider-bg.png">
+	<subBitmap ci="VolumeControl" sel="bg" pos="4,0,5,10" edge="0,0,4,0" />
+	<subBitmap ci="VolumeControl" sel="bg,left" pos="9,0,5,10" edge="4,0,0,0" />
+</bitmap>
+
+<bitmap file="main-control-slider-knob.png">
+	<subBitmap ci="VolumeControl" sel="knob,!mousedown" width="19" offset="1,-3" edge="4,0,4,0" />
+	<subBitmap ci="VolumeControl" sel="knob,mousedown" width="19" offset="1,-3" edge="4,0,4,0" />
+</bitmap>
+
+<bitmap file="main-control-au_volume.png" >
+	<subBitmap ci="VolumeControlIcon" sel="three" height="14" offset="8,1"/>
+	<subBitmap ci="VolumeControlIcon" sel="two" height="14" offset="8,1"/>
+	<subBitmap ci="VolumeControlIcon" sel="one" height="14" offset="8,1"/>
+	<subBitmap ci="VolumeControlIcon" sel="zero" height="14" offset="8,1"/>
+</bitmap>
+
+<bitmap file="message_bar-bg.png">
+	<subBitmap ci="MessageBarBackground" sel="error" width="28" edge="27,0,0,0" />
+	<subBitmap ci="MessageBarBackground" sel="warning" width="28" edge="27,0,0,0" />
+	<subBitmap ci="MessageBarBackground" sel="notice" width="28" edge="27,0,0,0" />
+	<subBitmap ci="MessageBarBackground" sel="feature" width="28" edge="27,0,0,0" />
+</bitmap>
+
+<font ci="MessageBarText" face="oxygen" size="12" color="#fcfcfc" sel="feature,!link" />
+<font ci="MessageBarText" face="oxygen" size="12" color="#fcfcfc" sel="feature,link" style="semibold,underline" />
+<font ci="MessageBarText" face="oxygen" size="12" color="#fcfcfc" sel="notice,!link" />
+<font ci="MessageBarText" face="oxygen" size="12" color="#fcfcfc" sel="notice,link" style="semibold,underline" />
+<font ci="MessageBarText" face="oxygen" size="12" color="#fcfcfc" sel="warning,!link" />
+<font ci="MessageBarText" face="oxygen" size="12" color="#fcfcfc" sel="warning,link" style="semibold,underline" />
+<font ci="MessageBarText" face="oxygen" size="12" color="#fcfcfc" sel="error,!link" />
+<font ci="MessageBarText" face="oxygen" size="12" color="#fcfcfc" sel="error,link" style="semibold,underline" />
+
+<font ci="NowPlayingTrackText"                  face="oxygen" size="12" color="#fcfcfc" />
+<font ci="NowPlayingTrackText" sel="mouseover"  face="oxygen" size="12" color="#fcfcfc" style="underline"/>
+<font ci="NowPlayingTrackText" sel="disabled"   face="oxygen" size="12" color="#888888" />
+<font ci="NowPlayingArtistText"                 face="oxygen" size="10" color="#e4e4e4" />
+<font ci="NowPlayingArtistText" sel="mouseover" face="oxygen" size="10" color="#e4e4e4" style="underline" />
+<font ci="NowPlayingArtistText" sel="disabled"  face="oxygen" size="10" color="#777777" />
+
+<bitmap file="np-coverart-highlight.png" ci="NowPlayingCoverArtHighlight" />
+
+<bitmap file="np-badge-top.png" ci="NowPlayingBadgeBgTop" />
+
+<bitmap file="np-collapse.png">
+  <subBitmap width="24" ci="NowPlayingCollapse" />
+  <subBitmap width="24" ci="NowPlayingCollapse" sel="mousedown|down" />
+</bitmap>
+
+<bitmap file="np-expand.png">
+  <subBitmap width="24" ci="NowPlayingExpand" />
+  <subBitmap width="24" ci="NowPlayingExpand" sel="mousedown|down" />
+</bitmap>
+
+<bitmap file="Now Playing/share.png">
+  <subBitmap width="20" ci="NowPlayingShareButton" />
+  <subBitmap width="20" ci="NowPlayingShareButton" sel="mousedown|down"/>
+</bitmap>
+
+<bitmap file="Now Playing/collection.png">
+  <subBitmap width="21" ci="NowPlayingCollectionButton" />
+  <subBitmap width="21" ci="NowPlayingCollectionButton" sel="mouseover" />
+  <subBitmap width="21" ci="NowPlayingCollectionButton" sel="mouseover,mousedown" />
+  <subBitmap width="21" ci="NowPlayingCollectionButton" sel="incollection" />
+  <subBitmap width="21" ci="NowPlayingCollectionButton" sel="incollection,mouseover"/>
+  <subBitmap width="21" ci="NowPlayingCollectionButton" sel="incollection,mouseover,mousedown"/>
+</bitmap>
+
+<color ci="NowPlayingBackground" color="#232629" />
+
+<bitmap file="throbber-big-white.png">
+	<subBitmap ci="ThrobberBig" sel="0" width="32" />
+	<subBitmap ci="ThrobberBig" sel="1" width="32" />
+	<subBitmap ci="ThrobberBig" sel="2" width="32" />
+	<subBitmap ci="ThrobberBig" sel="3" width="32" />
+	<subBitmap ci="ThrobberBig" sel="4" width="32" />
+	<subBitmap ci="ThrobberBig" sel="5" width="32" />
+	<subBitmap ci="ThrobberBig" sel="6" width="32" />
+	<subBitmap ci="ThrobberBig" sel="7" width="32" />
+	<subBitmap ci="ThrobberBig" sel="8" width="32" />
+	<subBitmap ci="ThrobberBig" sel="9" width="32" />
+	<subBitmap ci="ThrobberBig" sel="10" width="32" />
+	<subBitmap ci="ThrobberBig" sel="11" width="32" />
+</bitmap>
+
+<font ci="MenuBar"                 size="11" color="#7f8c8d" />
+<font ci="MenuBar" sel="mouseover" size="11" color="#bdc3c7" />
+
+<bitmap file="search_dropdown_border.png" ci="SearchDropdownBorder" edge="3,8,3,8" />
+
+<bitmap file="popin_window-bg.png" ci="QuestionPopupBg" edge="11,9,11,13" />
+<bitmap file="popin_window-bg-white.png" ci="WhitePopupBg" edge="11,9,11,13" />
+<bitmap file="popin_window-arrow.png">
+	<subBitmap width="19" sel="down" ci="QuestionPopupPointer" />
+	<subBitmap width="19" sel="up" ci="QuestionPopupPointer" />
+</bitmap>
+<bitmap file="popin_window-arrow-side.png">
+	<subBitmap height="19" sel="left" ci="QuestionPopupPointer" />
+	<subBitmap height="19" sel="right" ci="QuestionPopupPointer" />
+</bitmap>
+
+<font ci="AboutBoxVersion" size="11" color="#808080" style="bold" />
+<font ci="AboutBoxVersion" size="11" color="#808080" style="bold,underline" sel="linkover" />
+<font ci="AboutBoxText" size="9" color="#707070" />
+
+<font ci="DragDropText" size="11" color="#000000" />
+<color ci="DragDropBg" color="#fcfcfc" />
+<color ci="DragDropBorder" color="#000000" blend="50%" />
+
+<!-- Main window header and footer -->
+<bitmap file="header-bg.png" ci="WindowUpperBg" edge="5,0,5,1" />
+<bitmap file="header-bg-no-title.png" ci="WindowUpperBgNoTitle" edge="5,0,5,1" />
+<bitmap file="footer-bg.png" ci="WindowLowerBg" />
+<bitmap file="footer-bg-resize.png" ci="WindowLowerBgResize" edge="1,0,73,0" />
+
+<font ci="WindowCaption" size="13" color="#7f8c8d" /> <!-- CAT -->
+
+<bitmap file="window-controls-win.png">
+	<subBitmap width="28" ci="WindowMinimizeButton" />
+	<subBitmap width="28" ci="WindowMinimizeButton" sel="mouseover" />
+	<subBitmap width="28" ci="WindowMinimizeButton" sel="mousedown" />
+	<subBitmap width="27" ci="WindowRestoreButton" />
+	<subBitmap width="27" ci="WindowRestoreButton" sel="mouseover" />
+	<subBitmap width="27" ci="WindowRestoreButton" sel="mousedown" />
+	<subBitmap width="27" ci="WindowMaximizeButton" />
+	<subBitmap width="27" ci="WindowMaximizeButton" sel="mouseover" />
+	<subBitmap width="27" ci="WindowMaximizeButton" sel="mousedown" />
+	<subBitmap width="54" ci="WindowCloseButton" />
+	<subBitmap width="54" ci="WindowCloseButton" sel="mouseover" />
+	<subBitmap width="54" ci="WindowCloseButton" sel="mousedown" />
+	<subBitmap width="54" ci="WindowCloseLoginButton" />
+	<subBitmap width="54" ci="WindowCloseLoginButton" sel="mouseover" />
+	<subBitmap width="54" ci="WindowCloseLoginButton" sel="mousedown" />
+</bitmap>
+
+<bitmap file="window-controls-linux.png" colorkey="#FF00FF">
+	<subBitmap width="10" ci="WindowMinimizeButtonLinux" offset="1,3" />
+	<subBitmap width="10" ci="WindowMinimizeButtonLinux" offset="1,3" sel="mousedown" />
+	<subBitmap width="10" ci="WindowRestoreButtonLinux" offset="-1,3" />
+	<subBitmap width="10" ci="WindowRestoreButtonLinux" offset="-1,3" sel="mousedown" />
+	<subBitmap width="10" ci="WindowMaximizeButtonLinux" offset="-1,3" />
+	<subBitmap width="10" ci="WindowMaximizeButtonLinux" offset="-1,3" sel="mousedown" />
+	<subBitmap width="10" ci="WindowCloseButtonLinux" offset="-3,3" />
+	<subBitmap width="10" ci="WindowCloseButtonLinux" offset="-3,3" sel="mousedown" />
+</bitmap>
+
+<!-- Main controls -->
+<bitmap file="main-control-prev_next.png">
+	<subBitmap width="25" ci="MainControlPrevTrack" offset="0,-2" />
+	<subBitmap width="25" ci="MainControlPrevTrack" offset="0,-2" sel="mouseover" />
+	<subBitmap width="25" ci="MainControlPrevTrack" offset="0,-2" sel="mousedown" />
+	<subBitmap width="25" ci="MainControlPrevTrack" offset="0,-2" sel="disabled" />
+	<subBitmap width="25" ci="MainControlNextTrack" offset="0,-2" />
+	<subBitmap width="25" ci="MainControlNextTrack" offset="0,-2" sel="mouseover" />
+	<subBitmap width="25" ci="MainControlNextTrack" offset="0,-2" sel="mousedown" />
+	<subBitmap width="25" ci="MainControlNextTrack" offset="0,-2" sel="disabled" />
+</bitmap>
+
+<bitmap file="main-control-play_pause.png">
+	<subBitmap width="33" ci="MainControlPlay" />
+	<subBitmap width="33" ci="MainControlPlay" sel="mouseover" />
+	<subBitmap width="33" ci="MainControlPlay" sel="mousedown" />
+	<subBitmap width="33" ci="MainControlPlay" sel="disabled" />
+	<subBitmap width="33" ci="MainControlPause" />
+	<subBitmap width="33" ci="MainControlPause" sel="mouseover" />
+	<subBitmap width="33" ci="MainControlPause" sel="mousedown" />
+	<subBitmap width="33" ci="MainControlPause" sel="disabled" />
+</bitmap>
+
+<bitmap file="main-control-shuffle.png">
+	<subBitmap height="22" ci="MainControlShuffle" />
+	<subBitmap height="22" ci="MainControlShuffle" sel="mousedown" />
+	<subBitmap height="22" ci="MainControlShuffle" sel="down" />
+	<subBitmap height="22" ci="MainControlShuffle" sel="down,mousedown" />
+	<subBitmap height="22" ci="MainControlShuffle" sel="disabled" />
+</bitmap>
+
+<bitmap file="main-control-repeat.png">
+	<subBitmap height="22" ci="MainControlRepeat" sel="disabled" />
+	<subBitmap height="22" ci="MainControlRepeat" sel="state0" />
+	<subBitmap height="22" ci="MainControlRepeat" sel="state0,mousedown" />
+	<subBitmap height="22" ci="MainControlRepeat" sel="state1" />
+	<subBitmap height="22" ci="MainControlRepeat" sel="state1,mousedown" />
+	<subBitmap height="22" ci="MainControlRepeat" sel="state2" />
+	<subBitmap height="22" ci="MainControlRepeat" sel="state2,mousedown" />
+</bitmap>
+
+<bitmap file="main-control-audio-output.png">
+	<subBitmap height="21" ci="AudioOutputControl" sel="disabled" />
+	<subBitmap height="21" ci="AudioOutputControl" sel="mousedown" />
+	<subBitmap height="21" ci="AudioOutputControl" />
+</bitmap>
+
+<!-- History nav -->
+<font ci="ToolbarSmall"                      color="#7f8c8d" size="14" face="oxygen" />
+<font ci="ToolbarSmall" sel="down|mousedown" color="#adaeb3" style="underline" />
+<font ci="ToolbarSmall" sel="mouseover"      color="#bdc3c7" style="underline" />
+
+<bitmap file="toolbar-back.png">
+	<subBitmap height="25" ci="HistoryBackButton" />
+	<subBitmap height="25" ci="HistoryBackButton" sel="disabled"/>
+	<subBitmap height="25" ci="HistoryBackButton" sel="mouseover,!mousedown"/>
+	<subBitmap height="25" ci="HistoryBackButton" sel="mouseover,mousedown"/>
+</bitmap>
+
+<bitmap file="toolbar-forward.png">
+	<subBitmap height="25" ci="HistoryForwardButton" />
+	<subBitmap height="25" ci="HistoryForwardButton" sel="disabled"/>
+	<subBitmap height="25" ci="HistoryForwardButton" sel="mouseover,!mousedown"/>
+	<subBitmap height="25" ci="HistoryForwardButton" sel="mouseover,mousedown"/>
+</bitmap>
+
+<bitmap file="toolbar-search_box-button.png">
+	<subBitmap width="15" ci="SearchBoxClear" />
+	<subBitmap width="15" ci="SearchBoxClear" sel="mousedown" />
+</bitmap>
+<bitmap file="toolbar-search_glass.png">
+	<subBitmap ci="SearchBoxDropdown" />
+</bitmap>
+
+<bitmap file="toolbar-notifications.png">
+  <subBitmap height="27" ci="NotificationCenterButton" edge="20,4,4,4"/>
+  <subBitmap height="27" ci="NotificationCenterButton" sel="disabled" edge="20,4,4,4"/>
+  <subBitmap height="27" ci="NotificationCenterButton" sel="mouseover,!down" edge="20,4,4,4"/>
+  <subBitmap height="27" ci="NotificationCenterButton" sel="mousedown|down" edge="20,4,4,4"/>
+</bitmap>
+
+<font ci="NotificationCount"                      color="#7f8c8d" size="14" face="oxygen" />
+<font ci="NotificationCount" sel="mouseover"      color="#dfe0e6" style="underline" />
+<font ci="NotificationCount" sel="down|mousedown" color="#7f8c8d" style="underline" />
+
+<!-- Login window -->
+<bitmap ci="LoginWindowBg" file="login/background.png" edge="0,10,0,10" />
+<bitmap ci="LoginWindowBgNoTitlebar" file="login/background-no-titlebar.png" edge="0,10,0,10" />
+
+<font ci="WindowCaption" size="14" style="shadow_down" color="#dfe0e6" shadow="#eeeeee" sel="login"/>
+<font ci="CheckBoxTitle" size="14"  color="#dfe0e6" />
+
+<bitmap file="login/throbber.png">
+	<subBitmap ci="ThrobberLogin" sel="0" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="1" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="2" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="3" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="4" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="5" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="6" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="7" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="8" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="9" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="10" width="32" />
+	<subBitmap ci="ThrobberLogin" sel="11" width="32" />
+</bitmap>
+
+<bitmap ci="LoginWindowLogo" file="login/appIcon.png" align="center" />
+<bitmap ci="LoginWindowAwesomeLogo" file="login/fbspbbf.png" align="center" />
+<bitmap ci="LoginWindowFacebookBadge" file="login/fb-white-badge.png" align="left" />
+<bitmap ci="LoginWindowDivider" file="login/divider.png" edge="0,1,0,1" />
+<bitmap ci="LoginWindowDividerBg" file="login/background.png" edge="10,10,10,10" />
+<bitmap ci="LoginWindowErrorIcon" file="login/bubble-flag.png" />
+
+<font ci="LoginWindowLoggingInText" size="14" color="#fcfcfc" face="oxygen"/>
+
+<font ci="LoginWindowErrorTitle" size="18" color="#dfe0e6" face="oxygen"/>
+<font ci="LoginWindowErrorText" size="14" color="#dfe0e6" face="oxygen"/>
+<font ci="LoginWindowErrorText" color="#fcfcfc" sel="link" style="underline" face="oxygen"/>
+<font ci="LoginWindowErrorText" color="#fcfcfc" sel="linkover" style="underline" face="oxygen"/>
+
+<font ci="LoginWindowEditBoxTitle" size="14" color="#dfe0e6" face="oxygen"/>
+<font ci="LoginWindowLoginCaption" size="14" color="#dfe0e6" face="oxygen"/>
+<font ci="LoginWindowLoginCaption" size="14" color="#dfe0e6" style="bold" face="oxygen" sel="bold" />
+<font ci="LoginWindowLoginCaption" size="14" color="#dfe0e6" style="underline" sel="linkover" face="oxygen"/>
+<font ci="LoginWindowLink" size="14" color="#dfe0e6" face="oxygen"/>
+<font ci="LoginWindowLink" size="14" color="#dfe0e6" style="underline" sel="linkover" face="oxygen"/>
+<font ci="LoginWindowDivider" size="12" color="#424242" face="oxygen"/>
+<font ci="LoginWindowButton" size="14" color="#fcfcfc" face="oxygen" style="semibold"/>
+<font ci="LoginWindowButton" size="14" color="#fcfcfc" sel="disabled" face="oxygen" style="semibold"/>
+
+<bitmap file="checkbox.png">
+	<subBitmap height="18" ci="LoginWindowCheckbox" edge="18,0,0,0" sel="down" />
+	<subBitmap height="18" ci="LoginWindowCheckbox" edge="18,0,0,0" sel="down,mousedown" />
+	<subBitmap height="18" ci="LoginWindowCheckbox" edge="18,0,0,0" sel="down,disabled" />
+  <subBitmap height="18" ci="LoginWindowCheckbox" edge="18,0,0,0" sel="!down" />
+	<subBitmap height="18" ci="LoginWindowCheckbox" edge="18,0,0,0" sel="!down,mousedown" />
+	<subBitmap height="18" ci="LoginWindowCheckbox" edge="18,0,0,0" sel="!down,disabled" />
+</bitmap>
+
+<bitmap file="switch.png">
+  <subBitmap height="26" ci="LoginWindowSwitch" edge="26,0,0,0" sel="down"/>
+  <subBitmap height="26" ci="LoginWindowSwitch" edge="26,0,0,0" sel="down,mousedown"/>
+  <subBitmap height="26" ci="LoginWindowSwitch" edge="26,0,0,0" sel="down,disabled"/>
+  <subBitmap height="26" ci="LoginWindowSwitch" edge="26,0,0,0" sel="!down"/>
+  <subBitmap height="26" ci="LoginWindowSwitch" edge="26,0,0,0" sel="!down,mousedown"/>
+  <subBitmap height="26" ci="LoginWindowSwitch" edge="26,0,0,0" sel="!down,disabled"/>
+</bitmap>
+
+<bitmap file="checkmark.png" ci="Checkmark" />
+
+<bitmap file="login/fb-login-btn.png">
+  <subBitmap height="30" ci="LoginWindowFacebookSSOButton" edge="28,3,28,3" />
+  <subBitmap height="30" ci="LoginWindowFacebookSSOButton" sel="mousedown" edge="28,3,28,3" />
+  <subBitmap height="30" ci="LoginWindowFacebookSSOButton" sel="disabled" edge="28,3,28,3" />
+</bitmap>
+
+<bitmap file="login/submit.png">
+  <subBitmap height="30" ci="LoginWindowButton" edge="28,6,28,6" />
+  <subBitmap height="30" ci="LoginWindowButton" sel="mousedown" edge="28,6,28,6" />
+  <subBitmap height="30" ci="LoginWindowButton" sel="disabled" edge="28,6,28,6" />
+</bitmap>
+
+<bitmap file="login/play-overlay.png">
+	<subBitmap width="60" ci="LoginPlayOverlay" />
+	<subBitmap width="60" ci="LoginPlayOverlay" sel="mouseover" />
+	<subBitmap width="60" ci="LoginPlayOverlay" sel="down|mousedown" />
+
+	<subBitmap width="60" ci="LoginPauseOverlay" />
+	<subBitmap width="60" ci="LoginPauseOverlay" sel="mouseover" />
+	<subBitmap width="60" ci="LoginPauseOverlay" sel="down|mousedown" />
+</bitmap>
+
+<bitmap file="text_field.png">
+	<subBitmap height="22" ci="EditboxBg" edge="4,3,2,2" />
+	<subBitmap height="22" ci="EditboxBg" edge="4,3,2,2" sel="disabled" />
+</bitmap>
+
+<bitmap file="login/input.png">
+	<subBitmap height="39" ci="EditboxBg" edge="17,12,17,12" sel="login,focused,!disabled"/>
+	<subBitmap height="39" ci="EditboxBg" edge="17,12,17,12" sel="login,!focused" />
+</bitmap>
+
+<bitmap file="login/input.png">
+	<subBitmap height="39" ci="EditboxBg" edge="4,3,3,4" sel="login,small,focused,!disabled"/>
+	<subBitmap height="39" ci="EditboxBg" edge="4,3,3,4" sel="login,small,!focused" />
+</bitmap>
+
+<bitmap file="tab-bar-filter.png">
+	<subBitmap height="19" ci="EditboxBg" edge="22,3,9,3" sel="filter" />
+</bitmap>
+<bitmap ci="FilterIcon" file="filter-icon.png" />
+<font ci="FilterText" size="14" face="oxygen" color="#949494" />
+<!-- end of Login window -->
+
+<bitmap file="toolbar-search_bg.png" >
+	<subBitmap width="39" ci="SearchBoxBg" edge="16,0,16,0" />
+	<subBitmap width="39" ci="SearchBoxBg" sel="focused" edge="16,0,16,0" />
+</bitmap>
+
+<font ci="AudioAdTitle"       size="13" style="bold,shadow_up" color="#FFFFFF" shadow="#222222" />
+
+<bitmap file="Scrollbars/horizontal.png">
+	<subBitmap ci="HorizontalScrollbar" pos="12,0,12,12" sel="bg" />
+	<subBitmap ci="HorizontalScrollbar" pos="24,0,15,12" sel="knob" edge="7,0,7,0" />
+</bitmap>
+
+<bitmap file="Scrollbars/vertical.png">
+	<subBitmap ci="MainlistScrollbarCornerFiller" pos="0,27,12,12" />
+	<subBitmap ci="VerticalScrollbar" pos="0,15,12,12" sel="bg" />
+	<subBitmap ci="VerticalScrollbar" pos="0,0,12,15" sel="knob" edge="0,7,0,7" />
+</bitmap>
+
+<bitmap file="Scrollbars/vertical-light.png">
+  <subBitmap ci="VerticalScrollbar" height="23" sel="bright,left" />
+  <subBitmap ci="VerticalScrollbar" height="1"  sel="bright,bg" />
+  <subBitmap ci="VerticalScrollbar" height="23" sel="bright,right" />
+  <subBitmap ci="VerticalScrollbar" height="23" sel="bright,left,mousedown" />
+  <subBitmap ci="VerticalScrollbar" height="1"  sel="bright,bg,mousedown" />
+  <subBitmap ci="VerticalScrollbar" height="23" sel="bright,right,mousedown" />
+  <subBitmap ci="VerticalScrollbar" height="16" sel="bright,knob" edge="0,7,0,8" />
+</bitmap>
+
+<!-- No design for these yet
+<bitmap file="Scrollbars/horizontal-light.png">
+  <subBitmap ci="HorizontalScrollbar" width="20" sel="bright,left" />
+  <subBitmap ci="HorizontalScrollbar" width="20" sel="bright,right" />
+  <subBitmap ci="HorizontalScrollbar" width="14" sel="bright,knob" edge="6,0,6,0" />
+  <subBitmap ci="HorizontalScrollbar" width="20" sel="bright,left,mouseover" />
+  <subBitmap ci="HorizontalScrollbar" width="20" sel="bright,right,mouseover" />
+  <subBitmap ci="HorizontalScrollbar" width="14" sel="bright,knob,mouseover" edge="6,0,6,0" />
+  <subBitmap ci="HorizontalScrollbar" width="20" sel="bright,left,mousedown" />
+  <subBitmap ci="HorizontalScrollbar" width="20" sel="bright,right,mousedown" />
+  <subBitmap ci="HorizontalScrollbar" width="14" sel="bright,knob,mousedown" edge="6,0,6,0" />
+  <subBitmap ci="MainlistScrollbarCornerFiller" width="14" sel="bright" />
+  <subBitmap ci="HorizontalScrollbar" sel="bright,bg" pos="0,0,1,14" />
+  <subBitmap ci="HorizontalScrollbar" sel="bright,edge" pos="0,0,1,1" />
+</bitmap>
+-->
+
+<color ci="ScrollbarMarginFiller" color="#232629" />
+
+<color ci="MainlistDragDropLine" color="#fcfcfc" />
+
+<!-- Now playing album art -->
+<bitmap ci="NowPlayingDefaultCover" file="now_playing-art_placeholder-album.png" />
+<bitmap ci="NowPlayingDefaultAdCover" file="Placeholders/300-advertising.png" />
+
+<!-- Listcontainer/List of playlists -->
+<color ci="SidebarBg" color="#232629" />
+
+<bitmap file="button-text-11.png">
+  <subBitmap height="20" ci="SidebarNewPlaylistButton" edge="9,0,9,0" />
+  <subBitmap height="20" ci="SidebarNewPlaylistButton" sel="mouseover,!mousedown" edge="9,0,9,0" />
+  <subBitmap height="20" ci="SidebarNewPlaylistButton" sel="mousedown" edge="9,0,9,0" />
+  <subBitmap height="20" ci="SidebarNewPlaylistButton" sel="drop" edge="9,0,9,0" />
+</bitmap>
+
+<bitmap file="Sourcelist/top_shadow.png" ci="SidebarHeaderDivider" />
+
+<bitmap file="Sourcelist/new_playlist.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="new-list" />
+</bitmap>
+
+<bitmap file="Sourcelist/whats_new.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="home" />
+</bitmap>
+
+<bitmap file="Sourcelist/library.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="library" />
+</bitmap>
+
+<bitmap file="Sourcelist/collection.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="starred" />
+</bitmap>
+
+<bitmap file="Sourcelist/song.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="otherstarred" />
+</bitmap>
+
+<bitmap file="Sourcelist/people.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="people" />
+</bitmap>
+
+<bitmap file="Sourcelist/top_lists.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="toplists" />
+</bitmap>
+
+<bitmap file="Sourcelist/song.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="othertoplists" />
+</bitmap>
+
+<bitmap file="Sourcelist/playqueue.png">
+	<subBitmap ci="SidebarRowIcon" sel="playqueue" />
+</bitmap>
+
+<bitmap file="Sourcelist/group.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="folder" />
+</bitmap>
+
+<bitmap file="Sourcelist/search.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="search" />
+</bitmap>
+
+<bitmap file="Sourcelist/application.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="application" />
+</bitmap>
+
+<bitmap file="Sourcelist/song.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="list,public-list" />
+</bitmap>
+
+<bitmap file="Sourcelist/collaborativeplaylist.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="collab-list" />
+</bitmap>
+
+<bitmap file="Sourcelist/music_files.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="lfiles" />
+</bitmap>
+
+<bitmap file="Sourcelist/group_control.png">
+	<subBitmap width="18" ci="SidebarRowDropdownIcon" sel="open"/>
+	<subBitmap width="18" ci="SidebarRowDropdownIcon" sel="opening1"/>
+	<subBitmap width="18" ci="SidebarRowDropdownIcon" sel="opening2"/>
+	<subBitmap width="18" ci="SidebarRowDropdownIcon" sel="opening3"/>
+	<subBitmap width="18" ci="SidebarRowDropdownIcon" sel="opening4"/>
+	<subBitmap width="18" ci="SidebarRowDropdownIcon" sel="opening5"/>
+	<subBitmap width="18" ci="SidebarRowDropdownIcon" sel="closed"/>
+</bitmap>
+
+<bitmap file="Sourcelist/devices.png">
+	<subBitmap width="18" ci="SidebarRowIcon" sel="devices" />
+</bitmap>
+
+<bitmap file="Sourcelist/generic-device-16.png">
+  <subBitmap ci="SidebarRowIcon" width="18" sel="device" />
+</bitmap>
+
+<bitmap file="mainlist-row-playing-marker.png">
+  <subBitmap ci="SidebarPlayIcon" width="17" sel="playing" />
+  <subBitmap ci="SidebarPlayIcon" width="8" sel="paused" />
+</bitmap>
+
+<font ci="SidebarRowFont"                color="#7f8c8d" size="14" face="oxygen" />
+<font ci="SidebarRowFont" sel="selected" color="#f7f9ff" />
+
+<font ci="SidebarRowFont" sel="drop"          color="#232629" style="bold" />
+<font ci="SidebarRowFont" sel="drop,selected" color="#232629" style="bold" />
+
+<font ci="SidebarRowFont" sel="new-list"           color="#dddddd" />
+<font ci="SidebarRowFont" sel="new-list,mousedown" color="#787878" />
+<font ci="SidebarRowFont" sel="new-list,drop"      color="#232629" style="bold" />
+
+<font ci="SidebarRowFont" sel="header" size="12" color="#7f8c8d" face="oxygen"/>
+
+<font ci="SidebarRowSmallFont" size="12"      color="#7f8c8d" face="oxygen" style="light" />
+<font ci="SidebarRowSmallFont" sel="selected" color="#bdc3c7" />
+
+<font ci="SidebarRowSmallFont" sel="drop"          color="#232629" />
+<font ci="SidebarRowSmallFont" sel="drop,selected" color="#232629" />
+
+<color ci="SidebarRowBg"                           color="#232629" />
+<color ci="SidebarRowBg" sel="selected,focused"    color="#2e2f33" />
+<color ci="SidebarRowBg" sel="!selected,mouseover" color="#17181a" />
+
+<bitmap ci="SidebarRowBg" sel="header" file="Sourcelist/h_divider.png" />
+<bitmap ci="SidebarRowBg" sel="drop"   file="Sourcelist/drop_bg.png" edge="3,3,3,3" />
+
+<!-- Sidebar header -->
+<bitmap ci="SidebarHeaderBg" file="section_head-bg.png" />
+
+<bitmap ci="SidebarSelectionIndicator" file="selected-highlight.png" />
+
+<bitmap ci="SidebarCollectionOverview" file="collection-overview.png" />
+<bitmap ci="SidebarCollectionSongs" file="collection-songs.png" />
+<bitmap ci="SidebarCollectionAlbums" file="collection-albums.png" />
+<bitmap ci="SidebarCollectionArtists" file="collection-artists.png" />
+
+<font ci="SidebarHeaderFont"             size="13" color="#bdc3c7" face="oxygen" style="semibold"  />
+<font ci="SidebarHeaderFont" sel="small" size="11" />
+
+<!-- Toplist -->
+<color ci="TopListHeaderBg" color="#1C1B20" />
+<color ci="TopListRowBg" color="#373737" />
+<color ci="TopListRowBg" color="#313131" sel="odd" />
+
+<font ci="TopListRowNumber" color="#bdc3c7" size="14" face="oxygen" />
+<font ci="TopListRowNumber" color="#2c3e50" sel="!playing,error|!playing,notavail|!playing,unmatched" />
+<font ci="TopListRowNumber" color="#2980b9" sel="!playing,premiumonly" />
+<font ci="TopListRowNumber" color="#3daee9" sel="playing" />
+
+<font ci="TopListRowName" color="#bdc3c7" size="14" face="oxygen" />
+<font ci="TopListRowName" color="#2c3e50" sel="!playing,error|!playing,notavail|!playing,unmatched" />
+<font ci="TopListRowName" color="#2980b9" sel="!playing,premiumonly" />
+<font ci="TopListRowName" color="#3daee9" sel="playing" />
+
+<font ci="TopListRowNameGray" color="#7f8c8d" size="14" face="oxygen" />
+<font ci="TopListRowNameGray" color="#bdc3c7" sel="link" style="underline" />
+
+<font ci="TopListMenuButtonBig" color="#7f8c8d" size="14" face="oxygen" />
+<font ci="TopListMenuButtonBig" color="#fcfcfc" sel="mouseover" />
+<font ci="TopListMenuButtonBig" color="#fcfcfc" sel="mousedown" />
+<bitmap file="top_list_header_button-big.png">
+	<subBitmap ci="TopListMenuButtonBig" width="34"                 edge="10,0,23,0" />
+	<subBitmap ci="TopListMenuButtonBig" width="34" sel="mouseover" edge="10,0,15,0" />
+	<subBitmap ci="TopListMenuButtonBig" width="34" sel="mousedown" edge="10,0,15,0" />
+</bitmap>
+
+<!-- Placeholders -->
+<bitmap ci="PlaceholderPlaylist" sel="49" file="Placeholders/49-playlist.png" />
+<bitmap ci="PlaceholderPlaylist" sel="64" file="Placeholders/64-playlist.png" />
+<bitmap ci="PlaceholderPlaylist" sel="128" file="Placeholders/128-playlist.png" />
+
+<bitmap ci="PlaceholderUser" sel="18" file="Placeholders/18-user.png" />
+<bitmap ci="PlaceholderUser" sel="23" file="Placeholders/23-user.png" />
+<bitmap ci="PlaceholderUser" sel="64" file="Placeholders/64-user.png" />
+<bitmap ci="PlaceholderUser" sel="128" file="Placeholders/128-user.png" />
+
+<bitmap ci="PlaceholderUserPrivate" sel="23" file="Placeholders/23-user-private.png" />
+
+<!-- Label Page -->
+<font ci="LabelTitle" size="11" style="bold" color="#fcfcfc" />
+<font ci="LabelSubTitle" size="7" color="#808080" />
+<font ci="LabelGroupHeader" sel="news"   size="11"    style="bold" color="#caffac" />
+<font ci="LabelGroupHeader" sel="events" size="11"    style="bold" color="#ffacc3" />
+<font ci="LabelGroupHeader" sel="links" size="11"     style="bold" color="#8fffe6" />
+<font ci="LabelGroupHeader" sel="downloads" size="11" style="bold" color="#8fc4ff" />
+
+<font ci="LabelNewsHeader" size="11" style="bold" color="#fcfcfc" />
+<font ci="LabelNewsText" size="11" color="#b0b0b0" />
+<font ci="LabelEventMonth" size="9" color="#ffacc3" />
+<font ci="LabelEventDay" size="13" style="bold" color="#fcfcfc" />
+<font ci="LabelEventHeader" size="11" style="bold" color="#fcfcfc" />
+<font ci="LabelEventHeader" sel="mouseover" style="bold,underline" />
+<font ci="LabelEventText" size="11" color="#808080" />
+
+<font ci="LabelLinkText" size="11" color="#b0b0b0" />
+<font ci="LabelLinkText" sel="mouseover" style="underline" />
+<font ci="LabelDownloadText" size="11" color="#b0b0b0" />
+
+<font ci="LabelReadMore" size="9" color="#9fd8ef" />
+<font ci="LabelReadMore" sel="mouseover" style="underline" />
+
+<color ci="InfoTabsSeparator" color="#232629" />
+<bitmap ci="TopTabBarBg" file="Tab Bar/bg.png"/>
+<bitmap ci="TopTabBarButton" file="Tab Bar/active.png" edge="11,0,11,0" />
+<font ci="TopTabBarButtonFont" size="14" color="#aaaaaa" face="oxygen" />
+<font ci="TopTabBarButtonFont" size="14" color="#dddddd" face="oxygen" sel="mouseover"/>
+<font ci="TopTabBarButtonFont" size="14" color="#dddddd" face="oxygen" sel="down"/>
+
+<!-- Settings view -->
+<bitmap ci="SettingsBubble" file="info_group-bubble-bg.png" edge="8,9,8,9" />
+<bitmap ci="SettingsBubbleDrop" file="info_group-bubble-drop.png" align="center,bottom" />
+<font ci="SettingsHeaderFont" size="14" color="#FFFFFF" shadow="#000000" face="oxygen" />
+<font ci="SettingsFont" size="14" color="#FFFFFF" shadow="#555555" face="oxygen" />
+<font ci="SettingsFont" sel="warning" size="14" color="#FFFFFF" shadow="#555555" />
+<font ci="SettingsFont" sel="disabled" size="14" color="#949494" shadow="#555555" />
+<font ci="SettingsDropDownFont" size="14" color="#222222" shadow="#fcfcfc" face="oxygen" />
+<font ci="SettingsButton" size="14" color="#000000" shadow="#eeeeee" face="oxygen" />
+<font ci="SettingsButton" size="14" color="#232629" shadow="#aaaaaa" sel="disabled" />
+
+<bitmap file="button.png">
+    <subBitmap height="21" ci="SettingsButton" edge="11,9,11,9" />
+    <subBitmap height="21" ci="SettingsButton" sel="mousedown" edge="11,9,11,9" />
+    <subBitmap height="21" ci="SettingsButton" sel="disabled" edge="11,9,11,9" />
+</bitmap>
+
+<bitmap file="info_group-drop_down.png"  >
+	<subBitmap ci="SettingsDropDown" height="22" edge="10, 22, 20, 0"/>
+	<subBitmap ci="SettingsDropDown" sel="down" height="22" edge="10, 22, 20, 0"/>
+	<subBitmap ci="SettingsDropDown" sel="disabled" height="22" edge="10, 22, 20, 0"/>
+</bitmap>
+
+<bitmap file="radio_button.png" >
+  <subBitmap ci="SettingsRadioButton" sel="down" height="18" />
+  <subBitmap ci="SettingsRadioButton" sel="down,mousedown" height="18" />
+  <subBitmap ci="SettingsRadioButton" sel="down,disabled" height="18" />
+  <subBitmap ci="SettingsRadioButton" sel="!down" height="18" />
+  <subBitmap ci="SettingsRadioButton" sel="!down,mousedown" height="18" />
+  <subBitmap ci="SettingsRadioButton" sel="!down,disabled" height="18" />
+</bitmap>
+
+<!-- Start page -->
+<bitmap ci="ImageShadow" file="image_shadow-for_dark_bg.png" edge="3,3,3,3" />
+
+<font ci="StartPageButton" size="11" color="#000000"/>
+
+<!-- Local files -->
+<bitmap file="mainlist-track_state.png">
+  <subBitmap width="18" ci="LfilesIcon" sel="lfiles" />
+  <subBitmap width="18" ci="LfilesIcon" sel="lfiles,playing" />
+  <subBitmap width="18" ci="LfilesIcon" sel="error" />
+  <subBitmap width="18" ci="LfilesIcon" sel="error,playing" />
+  <subBitmap width="18" ci="LfilesIcon" sel="relinked" />
+  <subBitmap width="18" ci="LfilesIcon" sel="relinked,playing" />
+</bitmap>
+
+<!-- Offline mode -->
+<bitmap file="offline-indicators.png">
+	<subBitmap ci="OfflineIndicators" sel="waiting,sidebar" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,0" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,1" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,2" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,3" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,4" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,5" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="done" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="error" width="16" />
+
+	<subBitmap ci="OfflineIndicators" sel="waiting,selected,sidebar" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,0,selected" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,1,selected" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,2,selected" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,3,selected" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,4,selected" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="down,5,selected" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="done,selected" width="16" />
+	<subBitmap ci="OfflineIndicators" sel="error,selected" width="16" />
+
+	<subBitmap ci="OfflineIndicators" sel="nofit" width="16" />
+</bitmap>
+
+<bitmap ci="OfflineIndicators" sel="waiting,!sidebar" width="16" file="pending.png" />
+
+<bitmap ci="DownloadPending" file="pending.png"/>
+
+<bitmap file="footer-mode-icons.png">
+  <subBitmap ci="OfflineState" pos="0,9,18,9" />
+</bitmap>
+
+<font ci="OfflineState" size="9" color="#a6ddf6" shadow="#000000" style="shadow_up" />
+
+<!-- social -->
+<!-- Facebook Posting Toggle -->
+<bitmap file="switch_small.png">
+  <subBitmap height="20" ci="TogglePostingButton" />
+  <subBitmap height="20" ci="TogglePostingButton" sel="down" />
+</bitmap>
+
+<font ci="PostToFacebook" size="11" face="Tahoma" color="#dddddd" shadow="#232629" />
+
+<bitmap file="head_bar-bg.png">
+  <subBitmap ci="HeadBarBackground" width="18" sel="self" />
+  <subBitmap ci="HeadBarBackground" width="18" sel="other" />
+</bitmap>
+
+<bitmap file="lightbox_buttons.png">
+  <subBitmap ci="LightboxButton" edge="5,0,5,0" height="30" />
+  <subBitmap ci="LightboxButton" edge="5,0,5,0" height="30" sel="mousedown" />
+  <subBitmap ci="LightboxButton" edge="5,0,5,0" height="30" sel="disabled" />
+  <subBitmap ci="LightboxButton" edge="5,0,5,0" height="30" sel="secondary" />
+  <subBitmap ci="LightboxButton" edge="5,0,5,0" height="30" sel="secondary,mousedown" />
+  <subBitmap ci="LightboxButton" edge="5,0,5,0" height="30" sel="secondary,disabled" />
+</bitmap>
+
+<bitmap file="fb_buttons.png">
+  <subBitmap ci="FbLightboxButton" edge="2,0,2,0" height="24" />
+  <subBitmap ci="FbLightboxButton" edge="2,0,2,0" height="24" sel="mousedown" />
+  <subBitmap ci="FbLightboxButton" edge="2,0,2,0" height="24" sel="disabled" />
+  <subBitmap ci="FbLightboxButton" edge="2,0,2,0" height="24" sel="secondary" />
+  <subBitmap ci="FbLightboxButton" edge="2,0,2,0" height="24" sel="secondary,mousedown" />
+  <subBitmap ci="FbLightboxButton" edge="2,0,2,0" height="24" sel="secondary,disabled" />
+</bitmap>
+
+<bitmap file="head_bar-buttons.png">
+  <subBitmap ci="HeadBarButton" edge="9,0,9,0" height="23" />
+  <subBitmap ci="HeadBarButton" edge="9,0,9,0" height="23" sel="mousedown" />
+  <subBitmap ci="HeadBarButton" edge="21,0,9,0" height="23" sel="config"/>
+  <subBitmap ci="HeadBarButton" edge="21,0,9,0" height="23" sel="config,mousedown" />
+  <subBitmap ci="HeadBarButton" edge="21,0,9,0" height="23" sel="done"/>
+  <subBitmap ci="HeadBarButton" edge="21,0,9,0" height="23" sel="done,mousedown" />
+  <subBitmap ci="HeadBarButton" edge="21,0,9,0" height="23" sel="add"/>
+  <subBitmap ci="HeadBarButton" edge="21,0,9,0" height="23" sel="add,mousedown" />
+  <subBitmap ci="HeadBarButton" edge="9,0,9,0" height="23" sel="other"/>
+  <subBitmap ci="HeadBarButton" edge="9,0,9,0" height="23" sel="other,mousedown" />
+  <subBitmap ci="HeadBarButton" edge="9,0,9,0" height="23" sel="popin"/>
+  <subBitmap ci="HeadBarButton" edge="9,0,9,0" height="23" sel="popin,mousedown" />
+  <subBitmap ci="HeadBarButton" edge="9,0,9,0" height="23" sel="popindel"/>
+  <subBitmap ci="HeadBarButton" edge="9,0,9,0" height="23" sel="popindel,mousedown" />
+</bitmap>
+
+<font ci="AccountNameFont"                      color="#7f8c8d" size="14" face="oxygen" />
+<font ci="AccountNameFont" sel="incognito"      color="#2980b9" />
+<font ci="AccountNameFont" sel="mouseover"      color="#bdc3c7" style="underline" />
+<font ci="AccountNameFont" sel="down|mousedown" color="#adaeb3" style="underline" />
+
+<bitmap ci="AccountButtonMask" file="Toolbar/account-mask.png" />
+
+<bitmap file="lightbox.png">
+	<subBitmap ci="LightboxOverlay" />
+</bitmap>
+
+<bitmap file="lightbox-overlay-highlight.png">
+    <subBitmap ci="LightboxOverlayHighLight" sel="0" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="1,19" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="2,18" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="3,17" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="4,16" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="5,15" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="6,14" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="7,13" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="8,12" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="9,11" edge="9,9,9,9" width="19"/>
+    <subBitmap ci="LightboxOverlayHighLight" sel="10" edge="9,9,9,9" width="19"/>
+</bitmap>
+
+<bitmap file="lightbox_close_button.png">
+  <subBitmap width="32" ci="LightboxCloseAd" />
+  <subBitmap width="32" ci="LightboxCloseAd" sel="mousedown" />
+</bitmap>
+
+<bitmap file="win7-taskbar-ctrl.png">
+  <subBitmap width="19" ci="Win7TaskbarPrev" sel="disabled" />
+  <subBitmap width="19" ci="Win7TaskbarPrev" />
+  <subBitmap width="19" ci="Win7TaskbarPause" sel="disabled"/>
+  <subBitmap width="19" ci="Win7TaskbarPause" />
+  <subBitmap width="19" ci="Win7TaskbarPlay" sel="disabled"/>
+  <subBitmap width="19" ci="Win7TaskbarPlay" />
+  <subBitmap width="19" ci="Win7TaskbarNext" sel="disabled" />
+  <subBitmap width="19" ci="Win7TaskbarNext" />
+</bitmap>
+
+<bitmap file="win7-taskbar-badge.png" ci="Win7TaskbarBadge" />
+
+<!-- gridview -->
+
+<bitmap file="gridview-mask-flex.png">
+  <subBitmap ci="RoundedCornersMulMask" edge="4,4,4,4" />
+</bitmap>
+<bitmap file="gridview-shadow-flex.png">
+  <subBitmap ci="RoundedCornersShadowHighlight" edge="7,7,7,7" />
+</bitmap>
+
+<bitmap file="DeviceSection/box-corners.png">
+  <subBitmap ci="RoundedCornersIpodBackup" edge="5,5,5,5" />
+</bitmap>
+
+<bitmap file="DeviceSection/box-gray.png">
+  <subBitmap ci="RoundedCornersIpodGray" edge="4,0,4,0" />
+</bitmap>
+
+<bitmap file="DeviceSection/box-dark-gray.png">
+  <subBitmap ci="RoundedCornersIpodDarkGray" edge="4,0,4,0" />
+</bitmap>
+
+<bitmap file="DeviceSection/box-blue.png">
+  <subBitmap ci="RoundedCornersIpodBlue" edge="4,0,4,0" />
+</bitmap>
+
+<bitmap file="gridview-shadow2-flex.png">
+  <subBitmap ci="ShadowHighlight" edge="3,3,3,3" />
+</bitmap>
+
+<bitmap file="Buttons/gridview-hover.png">
+	<subBitmap ci="GridViewGoToButton" height="21" edge="10,0,18,0" />
+	<subBitmap ci="GridViewGoToButton" height="21" edge="10,0,18,0" sel="mousedown" />
+</bitmap>
+
+<!-- Device view -->
+<bitmap file="button-intro.png">
+	<subBitmap ci="IntroButton" height="58" edge="28,0,49,0" />
+	<subBitmap ci="IntroButton" height="58" edge="28,0,49,0" sel="mousedown" />
+</bitmap>
+
+</skin>
