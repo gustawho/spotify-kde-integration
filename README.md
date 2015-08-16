@@ -19,6 +19,5 @@ $ spotify-kde-integration
 ## Screenshots
 
 ![Main window](screenshots/main-window.png)
-![Controls](screenshots/controls.png)
 ![Control bar](screenshots/playbar.png)
-![Tray icon](screenshots/tray.png)
+![Controls](screenshots/controls.png) ![Tray icon](screenshots/tray.png)
