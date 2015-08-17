@@ -8,4 +8,4 @@ chmod +x spotify-kde-integration.sh
 
 sudo mv spotify-kde-integration.sh /usr/bin/spotify-kde-integration
 
-spotify-kde-integration.sh
+spotify-kde-integration
