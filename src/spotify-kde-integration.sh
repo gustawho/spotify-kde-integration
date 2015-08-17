@@ -74,6 +74,11 @@ main() {
   cp spotify-linux-256.png resources_old/_linux/spotify-linux-256.png
   cp spotify-linux-512.png resources_old/_linux/spotify-linux-512.png
   cp -rf style/*.png resources_old/
+  cp -rf style/Buttons/gridview-hover.png resources_old/Buttons/gridview-hover.png
+  cp -f 'style/Now Playing/'* 'resources_old/Now Playing/'
+  cp -f style/Placeholders/* resources_old/Placeholders/
+  cp -f style/about/text.png  resources_old/about/text.png
+  cp -f style/views/* resources_old/views/
   cp -f skin.xml resources_old/skin.xml
 
   echo -e "\e[1m\e[32m==> \e[39mPackaging resources.zip...\e[0m"
