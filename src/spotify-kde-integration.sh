@@ -56,12 +56,12 @@ main() {
   done
 
   # Images
-  wget -O images.zip https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/images.zip > download.log 2> /dev/null
+  wget -O style.zip https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/style.zip > download.log 2> /dev/null
   # Skin
   wget -O skin.xml https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/skin.xml > download.log 2> /dev/null
 
   echo -e "\e[1m\e[32m==> \e[39mExtracting ZIP...\e[0m"
-  unzip images.zip -d images/ > images.log 2> /dev/null
+  unzip style.zip -d style/ > style.log 2> /dev/null
 
   echo -e "\e[1m\e[32m==> \e[39mApplying new skin...\e[0m"
   cp spotify-linux-16.png resources_old/_linux/spotify-linux-16.png
@@ -73,7 +73,7 @@ main() {
   cp spotify-linux-128.png resources_old/_linux/spotify-linux-128.png
   cp spotify-linux-256.png resources_old/_linux/spotify-linux-256.png
   cp spotify-linux-512.png resources_old/_linux/spotify-linux-512.png
-  cp -rf images/*.png resources_old/
+  cp -rf style/*.png resources_old/
   cp -f skin.xml resources_old/skin.xml
 
   echo -e "\e[1m\e[32m==> \e[39mPackaging resources.zip...\e[0m"
