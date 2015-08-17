@@ -25,7 +25,7 @@ main() {
   cp /usr/share/spotify/spotify-client/Data/resources.zip resources_old.zip
   unzip -z resources_old.zip -d resources_old/
 
-  while
+  while true; do
   echo "There are two variants for the tray icon, one for each Breeze style (light and dark),"
   read -p "Which one should I use, (D)ark or (L)ight?" $userin
   if [[ $userin = [dD] ]]; then
