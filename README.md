@@ -7,7 +7,7 @@
 Run this one-liner to automatically install and run the script:
 
 ```bash
-$ wget --no-check-certificate http://bit.ly/spotify-kde -O - && sh spotify-kde && rm spotify-kde
+$ wget --no-check-certificate http://bit.ly/spotify-kde && sh spotify-kde && rm spotify-kde
 ```
 ## Usage
 
