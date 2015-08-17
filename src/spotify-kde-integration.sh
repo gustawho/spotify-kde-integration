@@ -5,9 +5,9 @@ set -e
 ## Helpers & Config
 
 msg() {
-  tput setaf 4
+  tput sgr0
+  tput setaf 2
   echo ">>> $1"
-  tput sgr 0
   sleep 1
 }
 
@@ -22,7 +22,7 @@ main() {
   cd "$tmp_dir"
 
   msg "Backing up resources.zip..."
-  cp /opt/spotify/spotify-client/Data/resources.zip resources_old.zip
+  cp /usr/share/spotify/spotify-client/Data/resources.zip resources_old.zip
   unzip resources_old.zip -d resources_old/
 
   echo "There are two variants for the tray icon, one for each Breeze style (light and dark),"
@@ -83,7 +83,7 @@ main() {
   mv resources_old/resources_patched.zip .
 
   msg "Replacing current resources.zip..."
-  sudo cp resources_patched.zip /opt/spotify/spotify-client/Data/resources.zip
+  sudo cp resources_patched.zip /usr/share/spotify/spotify-client/Data/resources.zip
 
   msg "Cleaning up..."
   rm -rf "$tmp_dir"
