@@ -23,8 +23,9 @@ main() {
 
   msg "Backing up resources.zip..."
   cp /usr/share/spotify/spotify-client/Data/resources.zip resources_old.zip
-  unzip resources_old.zip -d resources_old/
+  unzip -z resources_old.zip -d resources_old/
 
+  while
   echo "There are two variants for the tray icon, one for each Breeze style (light and dark),"
   read -p "Which one should I use, (D)ark or (L)ight?" $userin
   if [[ $userin = [dD] ]]; then
@@ -38,6 +39,7 @@ main() {
     wget -O spotify-linux-128.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/dark/spotify-linux-128.png
     wget -O spotify-linux-256.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/dark/spotify-linux-256.png
     wget -O spotify-linux-512.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/dark/spotify-linux-512.png
+    break
   else
     if [[ $userin = [lL] ]]; then
       msg "Downloading assets..."
@@ -50,8 +52,10 @@ main() {
       wget -O spotify-linux-128.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/light/spotify-linux-128.png
       wget -O spotify-linux-256.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/light/spotify-linux-256.png
       wget -O spotify-linux-512.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/light/spotify-linux-512.png
+      break
     else
       echo "You didn't give a valid option. Press D for Dark or L for Light."
+      continue
     fi
   fi
 
@@ -61,7 +65,7 @@ main() {
   wget -O skin.xml https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/skin.xml
   
   msg "Extracting ZIP..."
-  unzip images.zip -d images/
+  unzip -z images.zip -d images/
 
   msg "Applying new skin..."
   cp spotify-linux-16.png resources_old/_linux/spotify-linux-16.png
