@@ -7,7 +7,7 @@ main() {
   echo -e "\e[1m\e[32m==> \e[39mEntering temporary directory...\e[0m"
   mkdir "$tmp_dir"
   cd "$tmp_dir"
-  
+
   if [ -d "/usr/share/spotify" ]
   then
     echo -e "\e[1m\e[32m==> \e[39mBacking up resources.zip...\e[0m"
@@ -98,8 +98,8 @@ main() {
   echo -e "\e[1m\e[32m==> \e[39mCleaning up...\e[0m"
   rm -rf "$tmp_dir"
 
-  echo -e "\e[1m\e[34m    Skin successfuly applied!"
-  echo -e "\e[1m\e[34m    Restart Spotify to check it out."
+  echo -e "\e[1m\e[34m  -> Skin successfuly applied!"
+  echo -e "\e[1m\e[34m  -> Restart Spotify to check it out."
   sleep 2
 }
 
