@@ -4,30 +4,30 @@ set -e
 tmp_dir="/tmp/fsi-$(date +%s)"
 
 main() {
-  echo -e "\e[1m\e[32m==> \e[39mEntering temporary directory...\e[0m"
+  echo -e "\e[1m\e[32m==> \e[97mEntering temporary directory...\e[0m"
   mkdir "$tmp_dir"
   cd "$tmp_dir"
 
   if [ -d "/usr/share/spotify" ]
   then
-    echo -e "\e[1m\e[32m==> \e[39mBacking up resources.zip...\e[0m"
+    echo -e "\e[1m\e[32m==> \e[97mBacking up resources.zip...\e[0m"
     cp /usr/share/spotify/spotify-client/Data/resources.zip resources_old.zip
     unzip resources_old.zip -d resources_old/ > source.log 2> /dev/null
     spotifydir="usrshare"
   else
-    echo -e "\e[1m\e[32m==> \e[39mBacking up resources.zip...\e[0m"
+    echo -e "\e[1m\e[32m==> \e[97mBacking up resources.zip...\e[0m"
     cp /opt/spotify/spotify-client/Data/resources.zip resources_old.zip
     unzip resources_old.zip -d resources_old/ > source.log 2> /dev/null
   fi
 
-  echo -e "\e[1m\e[34m   There are two variants for the tray icon, one for each Breeze style (light and dark),"
+  echo -e "\e[1m\e[97m  There are two variants for the tray icon, one for each Breeze style (light and dark),"
   while : ;do
     if [ "$answer" = "g" ];then
-      echo -e "\e[1m\e[31m! You didn't give a valid option, try again. (D)ark or (L)ight variant? \e[0m"
+      echo -e "\e[1m\e[97m  You didn't give a valid option, try again. (D)ark or (L)ight variant?"
     else
-      read -p "   Which one should I use, (D)ark or (L)ight? " -t 3 answer
+      read -p "  Which one should I use, (D)ark or (L)ight? " -t 10 answer
       if [ "$answer" = "d" ];then
-        echo -e "\e[1m\e[32m==> \e[39mDownloading assets...\e[0m"
+        echo -e "\e[1m\e[32m==> \e[97mDownloading assets...\e[0m"
         wget -O spotify-linux-16.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/dark/spotify-linux-16.png > download.log 2> /dev/null
         wget -O spotify-linux-22.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/dark/spotify-linux-22.png > download.log 2> /dev/null
         wget -O spotify-linux-24.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/dark/spotify-linux-24.png > download.log 2> /dev/null
@@ -39,7 +39,7 @@ main() {
         wget -O spotify-linux-512.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/dark/spotify-linux-512.png > download.log 2> /dev/null
         break
       elif [ "$answer" = "l" ];then
-        echo -e "\e[1m\e[32m==> \e[39mDownloading assets...\e[0m"
+        echo -e "\e[1m\e[32m==> \e[97mDownloading assets...\e[0m"
         wget -O spotify-linux-16.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/light/spotify-linux-16.png > download.log 2> /dev/null
         wget -O spotify-linux-22.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/light/spotify-linux-22.png > download.log 2> /dev/null
         wget -O spotify-linux-24.png https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/icons/light/spotify-linux-24.png > download.log 2> /dev/null
@@ -60,10 +60,10 @@ main() {
   # Skin
   wget -O skin.xml https://raw.githubusercontent.com/gustawho/spotify-kde-integration/master/src/skin.xml > download.log 2> /dev/null
 
-  echo -e "\e[1m\e[32m==> \e[39mExtracting ZIP...\e[0m"
+  echo -e "\e[1m\e[32m==> \e[97mExtracting ZIP...\e[0m"
   unzip style.zip -d style/ > style.log 2> /dev/null
 
-  echo -e "\e[1m\e[32m==> \e[39mApplying new skin...\e[0m"
+  echo -e "\e[1m\e[32m==> \e[97mApplying new skin...\e[0m"
   cp spotify-linux-16.png resources_old/_linux/spotify-linux-16.png
   cp spotify-linux-22.png resources_old/_linux/spotify-linux-22.png
   cp spotify-linux-24.png resources_old/_linux/spotify-linux-24.png
@@ -79,27 +79,28 @@ main() {
   cp -f style/Placeholders/* resources_old/Placeholders/
   cp -f style/about/text.png  resources_old/about/text.png
   cp -f style/views/* resources_old/views/
+  cp -f style/Sourcelist/* resources_old/Sourcelist/
   cp -f skin.xml resources_old/skin.xml
 
-  echo -e "\e[1m\e[32m==> \e[39mPackaging resources.zip...\e[0m"
+  echo -e "\e[1m\e[32m==> \e[97mPackaging resources.zip...\e[0m"
   cd resources_old/
   zip -r resources_patched.zip . > compress.log 2> /dev/null
   cd ..
   mv resources_old/resources_patched.zip .
 
   if [ $spotifydir = "usrshare" ]; then
-    echo -e "\e[1m\e[32m==> \e[39mReplacing current resources.zip...\e[0m"
+    echo -e "\e[1m\e[32m==> \e[97mReplacing current resources.zip...\e[0m"
     sudo cp resources_patched.zip /usr/share/spotify/spotify-client/Data/resources.zip
   else
-    echo -e "\e[1m\e[32m==> \e[39mReplacing current resources.zip...\e[0m"
+    echo -e "\e[1m\e[32m==> \e[97mReplacing current resources.zip...\e[0m"
     sudo cp resources_patched.zip /opt/spotify/spotify-client/Data/resources.zip
   fi
 
-  echo -e "\e[1m\e[32m==> \e[39mCleaning up...\e[0m"
+  echo -e "\e[1m\e[32m==> \e[97mCleaning up...\e[0m"
   rm -rf "$tmp_dir"
 
-  echo -e "\e[1m\e[34m  -> Skin successfuly applied!"
-  echo -e "\e[1m\e[34m  -> Restart Spotify to check it out."
+  echo -e "\e[1m\e[34m  -> \e[97mSkin successfuly applied!"
+  echo -e "\e[1m\e[34m  -> \e[97mRestart Spotify to check it out."
   sleep 2
 }
 
